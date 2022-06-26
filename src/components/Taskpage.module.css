@@ -1,0 +1,93 @@
+.tasklist{
+    text-align: center;
+    width: 90%;
+    padding: 0;
+    margin: auto;
+    position: relative;
+    margin-top:max(12.5vh,4rem);
+}
+.tasklist li{
+    list-style: none;
+}
+.tasklist ul{
+    max-height: 70vh;
+    min-height: max-content;
+    scroll-behavior: smooth;
+    overflow-x: visible;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin: 0;
+    padding: 0;
+}
+.tasklist ul::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+.heading{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-self: center;
+}
+.logout{
+    border-color: black;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    width: max-content;
+    height: max-content;
+    background-color: transparent;
+    font-size: large;
+    font-weight: bold;
+    align-self: center;
+}
+.logout:hover{
+    background-color: rgb(40, 40, 146);
+    color: white;
+}
+.add{
+    border-color: black;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    width: max-content;
+    height: max-content;
+    background-color: transparent;
+    font-size: large;
+    font-weight: bold;
+    align-self: center;
+}
+.add:hover{
+    background-color: rgb(187, 66, 66);
+    color: white;
+}
+.pagecontrol{
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+.pagebut{
+    margin: 0;
+    padding: 0;
+    height: max-content;
+    display: inline;
+    font-weight: bolder;
+    align-self: center;
+}
+.pagenum{
+    margin: 0;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+.center{
+    position: absolute;
+    justify-self: center;
+    left: 50%;
+}

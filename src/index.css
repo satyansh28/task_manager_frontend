@@ -5,8 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image:url("./imgs/bground.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
 }
-
+.bg{
+  display: flex;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -1,0 +1,32 @@
+.topbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 12vh;
+    min-height: 4rem;
+    width: 100vw;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #41b3a3;
+    border-style: solid;
+    border-width: 0px 0px 10px 0px ;
+    border-color: orange;
+    z-index: 1;
+}
+.tagline{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size:3rem;
+    padding-left: 2rem;
+}
+.topbar img{
+    top: 0;
+    align-self: center;
+    padding-right: 2rem;
+    height: 12vh;
+    min-height: 4rem;
+    width: auto;
+}

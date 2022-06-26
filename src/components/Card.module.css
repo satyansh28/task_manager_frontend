@@ -1,0 +1,55 @@
+.desc{
+    text-align: left;
+    font-size: large;
+    font-weight: 500;
+    white-space:pre-wrap ;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0.5rem;
+}
+.date{
+    background-color: transparent;
+    font-family: monospace;
+    font-weight: normal;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    float: right;
+}
+.green{
+    background-color: rgba(99, 236, 99, 0.8);
+}
+.white{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.outer{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    box-shadow: 0 6px 6px 6px rgba(0, 0, 0, 0.25);
+    height: max-content;
+}
+.done{
+    background-color: green;
+    color: white;
+    border-radius: 0.5rem;
+    border-color: green;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0.5rem;
+}
+.done:hover{
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+.del{
+    background-color: rgb(221, 57, 57);
+    color: white;
+    border-radius: 0.5rem;
+    border-color: rgb(221, 57, 57);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 00.5rem;
+}
+.del:hover{
+    background-color: brown;
+    border-color: brown;
+}
