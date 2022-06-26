@@ -3,7 +3,7 @@ import dom from'react-dom';
 import logincontext from '../store/logincontext';
 import styles from './overlay.module.css';
 const destination=document.getElementById("overlay");
-const backend='http://localhost:5000'
+const backend=process.env.REACT_APP_BACKEND_HOST;
 const Overlay=(props)=>{
     const {loginstate}=useContext(logincontext);
     const textref=useRef(null);
