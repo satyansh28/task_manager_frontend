@@ -29,20 +29,15 @@ const Regpage=(props)=>{
             }).then((res)=>
             {
                 if(res.status===201)
-                    return(res.json())
+                {
+                    hist.replace('/login');
+                    alert('An email has been sent to you,please verify then login!');
+                }
                 else if(res.status===401)
                     throw new Error("Duplicate email");
                 else
                     throw new Error("Something went wrong,try again later!");
             } )
-            .then((res)=>{
-                if(res.status===200)
-                {
-                    hist.replace('/login');
-                    alert('An email has been sent to you,please verify then login!');
-                }
-               
-            })
             .catch((e)=>{
                 console.log(e);
                 alert(e);
