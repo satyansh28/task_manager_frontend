@@ -3,7 +3,7 @@ import { NavLink,useHistory } from "react-router-dom";
 import { useEffect,useContext,useRef } from "react";
 import logincontext from "../store/logincontext";
 const backend=process.env.REACT_APP_BACKEND_HOST;
-const frontend_part=process.env.REACT_APP_FRONTEND_HOST_PART;
+const frontend_part="";
 const Loginpage=(props)=>{
     const emailref=useRef(null);
     const pwdref=useRef(null);

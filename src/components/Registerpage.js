@@ -2,7 +2,7 @@ import styles from "./Loginpage.module.css";
 import { NavLink,useHistory } from "react-router-dom";
 import { useRef } from "react";
 const backend=process.env.REACT_APP_BACKEND_HOST;
-const frontend_part=process.env.REACT_APP_FRONTEND_HOST_PART;
+const frontend_part="";
 const Regpage=(props)=>{
     
     const hist=useHistory();

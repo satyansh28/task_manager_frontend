@@ -5,7 +5,7 @@ import { useContext,useEffect, useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import Addoverlay from './Add_overlay.js';
 const backend=process.env.REACT_APP_BACKEND_HOST;
-const frontend_part=process.env.REACT_APP_FRONTEND_HOST_PART;
+const frontend_part="";
 const Taskspage=(props)=>{
     const{loginstate,setloginstate}=useContext(logincontext);
     const[refreshlist,setrefresflist]=useState(false);
