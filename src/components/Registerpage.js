@@ -2,6 +2,7 @@ import styles from "./Loginpage.module.css";
 import { NavLink,useHistory } from "react-router-dom";
 import { useRef } from "react";
 const backend=process.env.REACT_APP_BACKEND_HOST;
+const frontend_part=process.env.REACT_APP_FRONTEND_HOST_PART;
 const Regpage=(props)=>{
     
     const hist=useHistory();
@@ -30,7 +31,7 @@ const Regpage=(props)=>{
             {
                 if(res.status===201)
                 {
-                    hist.replace('/login');
+                    hist.replace(`${frontend_part}/login`);
                     alert('An email has been sent to you,please verify then login!');
                 }
                 else if(res.status===401)
@@ -55,7 +56,7 @@ const Regpage=(props)=>{
         <label htmlFor="password">Password:</label>
         <input ref={pwdref} className={styles.input} type="password" name="pwd"></input>
         <button className={styles.button} onClick={onReg}>Register</button>
-        <NavLink to="/login">Sign in</NavLink>
+        <NavLink to={`${frontend_part}/login`}>Sign in</NavLink>
     </div>
     );
 

@@ -3,7 +3,7 @@ import { NavLink,useHistory } from "react-router-dom";
 import { useEffect,useContext,useRef } from "react";
 import logincontext from "../store/logincontext";
 const backend=process.env.REACT_APP_BACKEND_HOST;
-
+const frontend_part=process.env.REACT_APP_FRONTEND_HOST_PART;
 const Loginpage=(props)=>{
     const emailref=useRef(null);
     const pwdref=useRef(null);
@@ -54,7 +54,7 @@ const Loginpage=(props)=>{
     },[setloginstate])
     useEffect(()=>{
         if(loginstate.token && loginstate.token!==null)
-            hist.push('/notes');
+            hist.push(`${frontend_part}/notes`);
     },[loginstate,hist])
     return(
     <div className={styles.outer}>
@@ -64,7 +64,7 @@ const Loginpage=(props)=>{
         <label htmlFor="password">Password:</label>
         <input ref={pwdref}  className={styles.input} type="password" name="pwd"></input>
         <button className={styles.button} onClick={onLogin}>Login</button>
-        <NavLink to="/register">Register</NavLink>
+        <NavLink to={`${frontend_part}/register`}>Register</NavLink>
     </div>
     );
 
